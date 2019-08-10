@@ -9,3 +9,4 @@ function sanitize_path
 export PATH="$(sanitize_path "$HOME/bin:$PATH")"
 
 alias git-sh='exec git-sh'
+alias tree='tree -I .git'
