@@ -1,0 +1,27 @@
+Protocol 2
+
+SyslogFacility AUTHPRIV
+LogLevel INFO
+
+UseDNS no
+AddressFamily any
+AllowTcpForwarding yes
+
+PrintLastLog no
+PrintMotd no
+
+PermitRootLogin no
+AllowUsers ankitpati
+
+UsePAM yes
+
+StrictModes yes
+PasswordAuthentication no
+PermitEmptyPasswords no
+ChallengeResponseAuthentication no
+
+AcceptEnv LANG LC_* LANGUAGE XMODIFIERS
+
+X11Forwarding yes
+
+Subsystem sftp /usr/lib/openssh/sftp-server

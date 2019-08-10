@@ -1,0 +1,11 @@
+Host *
+    Protocol 2
+    ForwardX11Trusted no
+    PasswordAuthentication no
+    ServerAliveInterval 60
+    IdentitiesOnly yes
+    Compression yes
+    SendEnv LANG LC_*
+    HashKnownHosts no
+    GSSAPIAuthentication yes
+    GSSAPIDelegateCredentials no
