@@ -1,0 +1,45 @@
+;;
+;; Domain:     sitpune.dev.
+;; Exported:   2019-08-11 19:01:28
+;;
+;; This file is intended for use for informational and archival
+;; purposes ONLY and MUST be edited before use on a production
+;; DNS server.  In particular, you must:
+;;   -- update the SOA record with the correct authoritative name server
+;;   -- update the SOA record with the contact e-mail address information
+;;   -- update the NS record(s) with the authoritative name servers for this domain.
+;;
+;; For further information, please consult the BIND documentation
+;; located on the following website:
+;;
+;; http://www.isc.org/
+;;
+;; And RFC 1035:
+;;
+;; http://www.ietf.org/rfc/rfc1035.txt
+;;
+;; Please note that we do NOT offer technical support for any use
+;; of this zone data, the BIND name server, or any other third-party
+;; DNS software.
+;;
+;; Use at your own risk.
+
+;; SOA Record
+sitpune.dev.	3600	IN	SOA	sitpune.dev. root.sitpune.dev. 2031721668 7200 3600 86400 3600
+
+;; A Records
+civil.sitpune.dev.	1	IN	A	3.81.220.11
+
+;; CAA Records
+sitpune.dev.	1	IN	CAA	0 iodef "mailto:contact@ankitpati.in"
+
+;; MX Records
+civil.sitpune.dev.	1	IN	MX	20 mx2.improvmx.com.
+civil.sitpune.dev.	1	IN	MX	10 mx1.improvmx.com.
+sitpune.dev.	1	IN	MX	20 mx2.improvmx.com.
+sitpune.dev.	1	IN	MX	10 mx1.improvmx.com.
+
+;; TXT Records
+2019._domainkey.civil.sitpune.dev.	1	IN	TXT	"v=DKIM1; h=sha256; k=rsa; t=y; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApudDpSj/2onjWj1efm910xromwk44COqRjo9MSyPxQEItPuisyd0QzkdoqRSsKgojmp/+RKeSxnIJeY2wqf17OK/jacAMRYvODhxkdyBy/ZzSxQxxJ8ynnZFjZho6SAdXC/InIYXXW+4/BptXJk/VrYwgMlpRLA2zwUAeDRnbP690UBtUh0Helc3OVvdKDgxNmuGQIgLq2k+xuA99UuOJNAhW5TA5U317mopCGqk1XnmqnQFvwDJCTcO2W8Kav8eEAw45FOvzWtQ9ViH5SVbf4tXzlpt2+a00jxKiff9na1EZCa9Dv4zgMGHudIksZF0LgySfqvzMJnTyYbLpB/SmwIDAQAB"
+civil.sitpune.dev.	1	IN	TXT	"v=spf1 ip4:3.81.220.11 -all"
+_dmarc.sitpune.dev.	1	IN	TXT	"v=DMARC1; p=reject; rua=mailto:postmaster@ankitpati.in"
