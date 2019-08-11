@@ -5,6 +5,9 @@ include(`/usr/share/sendmail/cf/m4/cf.m4')
 VERSIONID(`$Id: sendmail.mc, v 8.15.2-10 2018-01-13 23:43:05 cowboy Exp $')
 OSTYPE(`debian')
 DOMAIN(`debian-mta')
+dnl # Items controlled by /etc/mail/sendmail.conf - DO NOT TOUCH HERE
+undefine(`confHOST_STATUS_DIRECTORY')dnl        #DAEMON_HOSTSTATS
+dnl # Items controlled by /etc/mail/sendmail.conf - DO NOT TOUCH HERE
 undefine(`confHOST_STATUS_DIRECTORY')
 FEATURE(`no_default_msa')
 DAEMON_OPTIONS(`Family=inet,  Name=MTA-v4, Port=smtp, Addr=127.0.0.1')
