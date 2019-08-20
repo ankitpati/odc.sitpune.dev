@@ -1,0 +1,1 @@
+*/2 * * * * www-data /usr/bin/php /opt/moodle/admin/cli/cron.php >/dev/null
