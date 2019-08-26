@@ -24,7 +24,7 @@ FEATURE(`ratecontrol', `nodelay', `terminate')
 include(`/etc/mail/m4/dialup.m4')
 include(`/etc/mail/m4/provider.m4')
 include(`/etc/mail/tls/starttls.m4')
-define(`confRECEIVED_HEADER', `x')
+define(`confRECEIVED_HEADER', `')
 MAILER_DEFINITIONS
 MAILER(`local')
 MAILER(`smtp')
