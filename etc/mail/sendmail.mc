@@ -1,5 +1,3 @@
-divert(-1)
-divert(0)
 define(`_USE_ETC_MAIL_')
 include(`/usr/share/sendmail/cf/m4/cf.m4')
 VERSIONID(`$Id: sendmail.mc, v 8.15.2-10 2018-01-13 23:43:05 cowboy Exp $')
