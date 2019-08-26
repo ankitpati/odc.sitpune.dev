@@ -1,0 +1,7 @@
+define(`_USE_ETC_MAIL_')
+include(`/usr/share/sendmail/cf/m4/cf.m4')
+VERSIONID(`$Id: submit.mc, v 8.15.2-10 2018-01-13 23:43:05 cowboy Exp $')
+OSTYPE(`debian')
+DOMAIN(`debian-msp')
+FEATURE(`use_ct_file')
+FEATURE(`msp', `[127.0.0.1]', `25')
