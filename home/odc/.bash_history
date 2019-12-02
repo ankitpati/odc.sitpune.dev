@@ -1,6 +1,8 @@
 sudo apt install apache2 tree vim-gtk3
 sudo a2disconf other-vhosts-access-log
 sudo a2dissite 000-default.conf
+sudo a2enconf security
+sudo a2enmod proxy_http
 sudo a2enmod ssl
 sudo a2ensite odc.conf
 sudo chmod 640 /etc/ssl/private/odc.key
