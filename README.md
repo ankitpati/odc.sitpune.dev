@@ -1,4 +1,4 @@
-# Civil@SIT
+# ODC@SIT
 
-Moodle deployment notes, files, and configs for
-[Civil@SIT](https://civil.sitpune.dev "Civil Engineering at Symbiosis Institute of Technology, Pune").
+OpenDataCube deployment notes, files, and configs for
+[ODC@SIT](https://odc.sitpune.dev "OpenDataCube at Symbiosis Institute of Technology, Pune").
