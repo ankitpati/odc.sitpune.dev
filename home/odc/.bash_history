@@ -1,3 +1,4 @@
+sudo usermod -a -G docker ubuntu
 sudo apt install apache2 tree vim-gtk3
 sudo a2disconf other-vhosts-access-log
 sudo a2dissite 000-default.conf
