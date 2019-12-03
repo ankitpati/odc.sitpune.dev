@@ -13,3 +13,4 @@ sudo lsof -i :80
 sudo systemctl restart apache2.service
 sudo usermod -a -G ssl-cert www-data
 openssl s_client -connect odc.sitpune.dev:443
+docker exec -u 0 -it odc_jupyter_1 pip install -U cligj
